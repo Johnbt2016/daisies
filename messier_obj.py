@@ -27,7 +27,7 @@ def get_image(messier_image):
     with open(home + '/fig.png', "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
     
-    return [{"type": "image", "data": {"alt": "Thermal Scenario Heather Fm.", "src": "data:image/png;base64, " + encoded_string.decode('ascii')}}]
+    return [{"type": "image", "data": {"alt": "Messier object image from Skyview", "src": "data:image/png;base64, " + encoded_string.decode('ascii')}}]
 
 
 
