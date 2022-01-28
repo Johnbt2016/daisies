@@ -1,5 +1,6 @@
 import base64
 import markdown as md
+import pickle
 
 class HTMLDoc:
 	def __init__(self):
@@ -54,4 +55,4 @@ def format_output(bytestring_image, text):
 	doc.html += '</html'
 	# doc.add_css("styling.css")
 
-	return doc.html
+	return pickle.dumps(doc.html)
