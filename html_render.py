@@ -28,7 +28,7 @@ class HTMLDoc:
 	def to_html(self):
 		self.html = md.markdown(self.markdown)
 
-def format_output(bytestring_image, text):
+def format_output(bytestring_image, text = ''' '''):
 	
 
 	style = '''<html><head>
