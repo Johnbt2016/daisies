@@ -30,7 +30,7 @@ class HTMLDoc:
 		self.html = md.markdown(self.markdown)
 
 def format_output(bytestring_image, text):
-	
+
 
 	style = '''<html><head>
 			<style>
@@ -55,4 +55,4 @@ def format_output(bytestring_image, text):
 	doc.html += '</html'
 	# doc.add_css("styling.css")
 
-	return pickle.dumps(doc.html)
+	return doc.html
